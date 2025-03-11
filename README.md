@@ -1,32 +1,34 @@
-**Data Analysis and Preprocessing**
+# Data Analysis and Preprocessing  
 
-Using Pandas and NumPy, I handled missing values (median for numerical, mode for categorical) and removed outliers via boxplots. Type transformations and feature engineering included:
+This project focuses on **data cleaning, preprocessing, exploratory data analysis (EDA), and visualization** using **Pandas** and **NumPy** to uncover key insights.  
 
-Age from Year_Birth
+## Data Preprocessing  
 
-Total_Purchases (sum of purchases)
+### Handling Missing Values & Outliers  
+- **Numerical Data:** Imputed using the **median**.  
+- **Categorical Data:** Filled using the **mode**.  
+- **Outliers:** Identified and removed via **boxplots**.  
+- **Type Transformations:** Ensured consistency in data formats.  
 
-Revenue_Generated and TotalAmount_Spent
+### Feature Engineering  
+- **Age Extraction:** Derived from `Year_Birth`.  
+- **Total Purchases:** Summed across all purchase channels.  
+- **Revenue Metrics:** Computed **Revenue_Generated** and **TotalAmount_Spent**.  
+- **Family Structure:** Created using `Kidhome`, `Teenhome`, and `Marital_Status`.  
+- **Campaign Engagement:** `TotalCampaignsAcc` calculated from accepted campaigns.  
 
-Family Structure (using Kidhome, Teenhome, Marital_Status)
+## Exploratory Data Analysis (EDA)  
 
-TotalCampaignsAcc from accepted campaigns.
+- **Univariate Analysis:** Used **histograms** and **boxplots** to explore data distributions.  
+- **Bivariate Analysis:**  
+  - **Correlation Heatmaps:** Identified relationships between features.  
+  - **Scatter Plots:** Examined spending patterns and engagement trends.  
 
-Exploratory Data Analysis (EDA)
+## Data Visualization  
 
-Univariate analysis via histograms and boxplots examined distributions. Bivariate analysis with correlation heatmaps and scatter plots identified relationships between spending and engagement.
-
-**Data Visualization**
-
-With Matplotlib and Seaborn, I visualized:
-
-Top Campaign (bar chart)
-
-Spending by Product Category (stacked bar chart)
-
-Age Group Spending (line chart)
-
-Product Performance (revenue by product)
-
-Geographic Campaign Success (map).
-
+Using **Matplotlib** and **Seaborn**, the following insights were visualized:  
+- **Top Campaign Performance** (bar chart).  
+- **Spending by Product Category** (stacked bar chart).  
+- **Age Group Spending Trends** (line chart).  
+- **Product Performance** (revenue by product).  
+- **Geographic Campaign Success** (map visualization).  
